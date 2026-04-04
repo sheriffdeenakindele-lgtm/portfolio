@@ -119,8 +119,8 @@ export default function FirstSection() {
           </p>
           
           {/* Core Skills - Typing Effect */}
-          <div className="mt-8">
-            <p className="text-white/80 text-base md:text-lg">
+          <div className="mt-10">
+            <p className="text-white/80 text-2xl md:text-3xl">
               <span className="text-white/60">Core Skills: </span>
               <span className="text-blue-400 font-medium">
                 {displayedText}
@@ -132,7 +132,7 @@ export default function FirstSection() {
           <motion.button 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="mt-8 px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+            className="mt-10 px-10 py-4 md:px-12 md:py-5 text-lg md:text-xl bg-white text-black font-semibold rounded-full hover:bg-neutral-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
             View Projects

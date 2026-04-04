@@ -31,7 +31,7 @@ const projects = [
   {
     id: 4,
     title: "Coming Soon",
-    category: "UI/UX",
+    category: "coming soon",
     image: "/comingsoon.jpg",
     url: "#"
   }
@@ -42,7 +42,7 @@ export default function ProjectsSection() {
     <section id="projects" className="w-full bg-transparent py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
