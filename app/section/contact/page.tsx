@@ -27,9 +27,13 @@ export default function ContactSection() {
       >
         {/* Header */}
         <div className="mb-16">
-          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-medium mb-4">
+          <motion.h2 
+            animate={{ opacity: [1, 0, 1] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="text-white text-3xl md:text-4xl lg:text-5xl font-medium mb-4"
+          >
             Ready for the next challenge.
-          </h2>
+          </motion.h2>
           <p className="text-white/60 text-xl md:text-2xl">
             I&apos;m just a click away
           </p>

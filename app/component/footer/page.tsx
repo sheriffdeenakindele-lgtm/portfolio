@@ -68,12 +68,12 @@ export default function Footer() {
         </div>
 
         {/* Large Name - Full width stretch */}
-        <div className="w-full flex justify-center items-center overflow-hidden px-2">
+        <div className="w-full flex justify-center items-center overflow-hidden px-2 py-4">
           <motion.h2
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
             className="uppercase text-white whitespace-nowrap"
             style={{
               fontWeight: 600,
