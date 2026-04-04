@@ -26,7 +26,7 @@ export default function Header() {
               fontStyle: 'normal',
               fontFamily: '"Roboto Condensed", sans-serif',
               color: '#ffffff',
-              fontSize: 'clamp(2.5rem, 15vw, 220px)',
+              fontSize: 'clamp(2rem, 12vw, 200px)',
               letterSpacing: 'clamp(-4px, -1vw, -18px)',
               textTransform: 'uppercase',
               lineHeight: '85%',
@@ -35,7 +35,7 @@ export default function Header() {
               textAlign: 'center',
             }}
           >
-            SHERIFFDEEN
+            SHERIFF AKINDELE
           </motion.h1>
         </div>
       </header>

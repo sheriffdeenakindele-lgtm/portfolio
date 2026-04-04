@@ -80,7 +80,7 @@ export default function Footer() {
               fontStyle: 'normal',
               fontFamily: '"Roboto Condensed", sans-serif',
               color: '#ffffff',
-              fontSize: 'clamp(2.5rem, 15vw, 220px)',
+              fontSize: 'clamp(2rem, 12vw, 200px)',
               letterSpacing: 'clamp(-4px, -1vw, -18px)',
               textTransform: 'uppercase',
               lineHeight: '85%',
@@ -89,7 +89,7 @@ export default function Footer() {
               textAlign: 'center',
             }}
           >
-            AKINDELE
+            SHERIFF AKINDELE
           </motion.h2>
         </div>
       </div>
