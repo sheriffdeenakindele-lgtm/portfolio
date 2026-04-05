@@ -20,5 +20,5 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  return <HasMounted>{children}</HasMounted>;
+  return <>{children}</>;
 }
