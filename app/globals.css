@@ -13,9 +13,15 @@
   --font-mono: var(--font-geist-mono);
 }
 
-html, body {
-  overflow-x: hidden;
-  /* Remove height lock to restore native scroll on mobile */
+html {
+  overflow-x: clip;
+  height: auto;
+}
+
+body {
+  /* overflow: clip is the modern, sticky-friendly way to hide overflow-x */
+  overflow-x: clip;
+  overflow-y: visible;
   height: auto;
 }
 

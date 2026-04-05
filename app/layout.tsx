@@ -40,7 +40,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#0a0a0a] relative overflow-x-hidden text-neutral-200">
+      <body className="bg-[#0a0a0a] text-neutral-200">
         <SmoothScroll>
           {/* Glassmorphic Background Orbs - Reduced blur for mobile GPU stability */}
           <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
