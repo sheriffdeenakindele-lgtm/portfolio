@@ -2,11 +2,21 @@
 
 import Link from 'next/link';
 
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 export default function Footer() {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end end"]
+  });
+
+  const footerScale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const footerOpacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+
   return (
-    <footer className="bg-transparent border-t border-white/10 py-6 px-4 w-full">
+    <footer ref={containerRef} className="bg-transparent border-t border-white/10 py-6 px-4 w-full">
       <div className="w-full max-w-full">
         {/* Social Links - Spread across full width */}
         <div className="flex justify-between items-center mb-4 text-[10px] md:text-xs tracking-wider px-1 md:px-2 max-w-full gap-1 md:gap-0">
@@ -68,26 +78,24 @@ export default function Footer() {
         </div>
 
         {/* Large Name - Full width stretch */}
-        <div className="w-full flex justify-center items-center overflow-hidden px-2 py-4">
+        <div className="w-full flex justify-center items-center px-2 py-4">
           <motion.h2
-            initial={false}
-            animate={{ y: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
-            className="uppercase text-white whitespace-nowrap"
-            style={{
+            style={{ 
+              scale: footerScale,
+              opacity: footerOpacity,
               fontWeight: 600,
               fontStyle: 'normal',
               fontFamily: '"Roboto Condensed", sans-serif',
               color: '#ffffff',
               fontSize: 'clamp(1.5rem, 8vw, 200px)',
-              letterSpacing: 'clamp(-1px, -0.5vw, -12px)',
+              letterSpacing: 'clamp(-1px, -0.5vw, -6px)',
               textTransform: 'uppercase',
               lineHeight: '85%',
               fontFeatureSettings: 'normal',
               width: '100%',
               textAlign: 'center',
             }}
+            className="uppercase text-white whitespace-nowrap overflow-visible"
           >
             SHERIFF AKINDELE
           </motion.h2>

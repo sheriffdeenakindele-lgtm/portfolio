@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Header() {
   const scrollToSection = (sectionId: string) => {
@@ -11,29 +11,35 @@ export default function Header() {
     }
   };
 
+  const { scrollYProgress } = useScroll();
+  const headerScale = useTransform(scrollYProgress, [0, 0.1], [1, 0.9]);
+  const headerOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0.5]);
+
   return (
     <>
       {/* Large Name - Not Sticky */}
-      <header className="w-full bg-black py-4 md:py-6 px-2 md:px-4 overflow-hidden">
-        <div className="text-center mb-2 md:mb-4 w-full flex justify-center items-center px-2">
+      <header className="w-full bg-black py-4 md:py-6 px-2 md:px-4 overflow-hidden relative">
+        <div className="text-center mb-2 md:mb-4 w-full flex justify-center items-center px-2 min-h-[clamp(1.5rem,8vw,200px)]">
           <motion.h1
-            initial={false}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
-            className="uppercase text-white whitespace-nowrap"
-            style={{
+            style={{ 
+              scale: headerScale,
+              opacity: headerOpacity,
               fontWeight: 600,
               fontStyle: 'normal',
               fontFamily: '"Roboto Condensed", sans-serif',
               color: '#ffffff',
               fontSize: 'clamp(1.5rem, 8vw, 200px)',
-              letterSpacing: 'clamp(-1px, -0.5vw, -12px)',
+              letterSpacing: 'clamp(-1px, -0.5vw, -6px)',
               textTransform: 'uppercase',
               lineHeight: '85%',
               fontFeatureSettings: 'normal',
               width: '100%',
               textAlign: 'center',
             }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="uppercase text-white whitespace-nowrap overflow-visible"
           >
             SHERIFF AKINDELE
           </motion.h1>
