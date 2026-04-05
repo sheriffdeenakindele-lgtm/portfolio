@@ -2,6 +2,7 @@
 
 import { ReactNode, useEffect } from 'react';
 import Lenis from 'lenis';
+import HasMounted from './HasMounted';
 
 export default function SmoothScroll({ children }: { children: ReactNode }) {
   useEffect(() => {
@@ -19,5 +20,5 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  return <>{children}</>;
+  return <HasMounted>{children}</HasMounted>;
 }

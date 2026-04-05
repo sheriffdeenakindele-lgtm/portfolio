@@ -18,7 +18,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="w-full bg-transparent py-20 px-4">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -27,7 +27,7 @@ export default function ContactSection() {
       >
         {/* Header */}
         <div className="mb-16">
-          <motion.h2 
+          <motion.h2
             animate={{ opacity: [1, 0, 1] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             className="text-white text-3xl md:text-4xl lg:text-5xl font-medium mb-4"
@@ -45,7 +45,7 @@ export default function ContactSection() {
           <div className="space-y-4">
             <h3 className="text-white/60 text-sm uppercase tracking-wider">Email</h3>
             <div className="flex items-center gap-4 flex-wrap">
-              <Link 
+              <Link
                 href="mailto:sheriffdeenakindele@gmail.com"
                 className="text-white text-xl md:text-2xl font-medium hover:text-blue-400 transition-colors duration-300"
               >
@@ -67,7 +67,7 @@ export default function ContactSection() {
             <h3 className="text-white/60 text-sm uppercase tracking-wider">Phone</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-4 flex-wrap">
-                <Link 
+                <Link
                   href="tel:+2347049441095"
                   className="text-white text-xl md:text-2xl font-medium hover:text-blue-400 transition-colors duration-300"
                 >
@@ -83,7 +83,7 @@ export default function ContactSection() {
                 </motion.button>
               </div>
               <div className="flex items-center gap-4 flex-wrap">
-                <Link 
+                <Link
                   href="tel:+2349016267739"
                   className="text-white text-xl md:text-2xl font-medium hover:text-blue-400 transition-colors duration-300"
                 >

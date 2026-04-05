@@ -15,9 +15,19 @@ import {
   ContactSkeleton,
 } from "./component/skeletons";
 
+import HasMounted from "./component/HasMounted";
+
 export default function Home() {
   return (
-    <div>
+    <HasMounted 
+      fallback={
+        <div className="space-y-20">
+          <FirstSectionSkeleton />
+          <ProjectsSkeleton />
+          <GenericSectionSkeleton />
+        </div>
+      }
+    >
       <Suspense fallback={<FirstSectionSkeleton />}>
         <FirstSection />
       </Suspense>
@@ -41,6 +51,6 @@ export default function Home() {
       <Suspense fallback={<ContactSkeleton />}>
         <ContactSection />
       </Suspense>
-    </div>
+    </HasMounted>
   );
 }

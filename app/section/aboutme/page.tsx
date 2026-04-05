@@ -20,19 +20,15 @@ export default function AboutMeSection() {
             <h2 className="text-white text-xl font-medium">(ABOUT ME)</h2>
 
             <p className="text-white text-lg leading-relaxed">
-              I don&apos;t just build interfaces, I solve business problems through code.
+              I&apos;m a Frontend Engineer who builds high-performance web apps with React and Next.js. I don&apos;t just write code, I bridge the gap between complex business logic and clean, intuitive design. Whether it&apos;s a real-time OTP service or a digital marketplace, I turn messy requirements into stable, production-ready systems.
             </p>
 
             <p className="text-white text-lg leading-relaxed text-white/80">
-              As a Frontend Engineer specializing in React and Next.js, I bridge the gap between complex logic and clean design. I don&apos;t just &quot;write features&quot;—I architect high-performance solutions that prioritize scalability and user experience. Whether I&apos;m engineering a real-time OTP service or a digital marketplace, my focus is on turning ambiguous requirements into stable, production-ready systems.
+              I&apos;m big on technical integrity, using TypeScript, Server Components, and TanStack Query to keep things fast, type-safe, and maintainable. For me, performance isn&apos;t an afterthought, it&apos;s a core requirement.
             </p>
 
             <p className="text-white text-lg leading-relaxed text-white/80">
-              My approach is rooted in technical integrity. By leveraging TypeScript, Server Components, and TanStack Query, I transform messy data into seamless, type-safe interfaces. I treat performance as a core requirement rather than an afterthought, ensuring that every application I build is fast, maintainable, and optimized for the edge.
-            </p>
-
-            <p className="text-white text-lg leading-relaxed text-white/80">
-              I build for the next generation of the web, moving beyond &quot;functional&quot; to create resilient architecture. I&apos;m looking to partner with teams that value clean code and pixel-perfect execution. If you need an engineer who can deconstruct a complex vision into a high-performance reality, let&apos;s build something that sets the standard.
+              I&apos;m looking to partner with teams that value clean architecture and pixel-perfect execution. If you need someone who can turn a complex vision into a high-performance reality, let&apos;s build something great together.
             </p>
 
             {/* Stats Section */}

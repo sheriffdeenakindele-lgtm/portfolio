@@ -20,20 +20,6 @@ const projects = [
     category: "Software",
     image: `https://api.microlink.io/?url=http://dev.tootuff.shop&screenshot=true&meta=false&embed=screenshot.url`,
     url: "http://dev.tootuff.shop"
-  },
-  {
-    id: 3,
-    title: "Coming Soon",
-    category: "coming soon",
-    image: "/comingsoon.jpg",
-    url: "#"
-  },
-  {
-    id: 4,
-    title: "Coming Soon",
-    category: "coming soon",
-    image: "/comingsoon.jpg",
-    url: "#"
   }
 ];
 

@@ -33,7 +33,7 @@ export default function Footer() {
             <span className="text-xs">↗</span>
           </Link>
           <Link
-            href="https://x.com"
+            href="https://github.com/sheriffdeenakindele-lgtm"
             target="_blank"
             className="group relative text-white hover:text-white/60 transition-colors duration-300 uppercase inline-flex items-center gap-1"
           >
@@ -44,23 +44,23 @@ export default function Footer() {
             <span className="text-xs">↗</span>
           </Link>
           <Link
-            href="https://dribbble.com"
+            href="http://wa.me/2349016267739"
             target="_blank"
             className="group relative text-white hover:text-white/60 transition-colors duration-300 uppercase inline-flex items-center gap-1"
           >
             <span className="relative">
-              DRIBBLE
+              WHATSAPP
               <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </span>
             <span className="text-xs">↗</span>
           </Link>
           <Link
-            href="https://behance.net"
+            href="mailto:[sheriffdeenakindele@gmail.com]"
             target="_blank"
             className="group relative text-white hover:text-white/60 transition-colors duration-300 uppercase inline-flex items-center gap-1"
           >
             <span className="relative">
-              BB
+              Gmail
               <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </span>
             <span className="text-xs">↗</span>

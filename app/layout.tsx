@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto_Condensed } from "next/font/google";
+import { Geist, Geist_Mono, Roboto_Condensed, Syne } from "next/font/google";
 import "./globals.css";
 import Header from "./component/header/page";
 import Footer from "./component/footer/page";
