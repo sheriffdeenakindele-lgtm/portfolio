@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Force dark variables by default to avoid light-mode flash while loading */
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -12,16 +13,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html, body {
   overflow-x: hidden;
-  height: 100%;
+  /* Remove height lock to restore native scroll on mobile */
+  height: auto;
 }
 
 body {

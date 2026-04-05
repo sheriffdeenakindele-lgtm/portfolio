@@ -89,7 +89,7 @@ export default function FirstSection() {
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-12 px-4">
         {/* Left side - GIF */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={false}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex-1 flex justify-center items-center"
@@ -109,7 +109,7 @@ export default function FirstSection() {
 
         {/* Right side - Text */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={false}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex-1 text-left"

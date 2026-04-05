@@ -19,13 +19,7 @@ import HasMounted from "./component/HasMounted";
 
 export default function Home() {
   return (
-    <HasMounted 
-      fallback={
-        <div className="bg-black">
-          <FirstSectionSkeleton />
-        </div>
-      }
-    >
+    <div className="bg-[#0a0a0a]">
       <Suspense fallback={<FirstSectionSkeleton />}>
         <FirstSection />
       </Suspense>
@@ -49,6 +43,6 @@ export default function Home() {
       <Suspense fallback={<ContactSkeleton />}>
         <ContactSection />
       </Suspense>
-    </HasMounted>
+    </div>
   );
 }

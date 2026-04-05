@@ -17,7 +17,7 @@ export default function Header() {
       <header className="w-full bg-black py-4 md:py-6 px-2 md:px-4 overflow-hidden">
         <div className="text-center mb-2 md:mb-4 w-full flex justify-center items-center px-2">
           <motion.h1
-            initial={{ y: -100, opacity: 0 }}
+            initial={false}
             animate={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
             className="uppercase text-white whitespace-nowrap"
