@@ -42,11 +42,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#0a0a0a] relative overflow-x-hidden text-neutral-200">
         <SmoothScroll>
-          {/* Glassmorphic Background Orbs */}
+          {/* Glassmorphic Background Orbs - Reduced blur for mobile GPU stability */}
           <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-            <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-purple-600/10 blur-[100px] animate-pulse" />
-            <div className="absolute bottom-[-10%] right-[-10%] w-[30vw] h-[30vw] rounded-full bg-blue-600/10 blur-[100px] animate-pulse" style={{ animationDelay: '2s' }} />
-            <div className="absolute top-[40%] left-[30%] w-[20vw] h-[20vw] rounded-full bg-cyan-600/5 blur-[80px] animate-pulse" style={{ animationDelay: '4s' }} />
+            <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-purple-600/10 blur-[40px] animate-pulse" />
+            <div className="absolute bottom-[-10%] right-[-10%] w-[30vw] h-[30vw] rounded-full bg-blue-600/10 blur-[40px] animate-pulse" style={{ animationDelay: '2s' }} />
+            <div className="absolute top-[40%] left-[30%] w-[20vw] h-[20vw] rounded-full bg-cyan-600/5 blur-[30px] animate-pulse" style={{ animationDelay: '4s' }} />
           </div>
 
           <Header />

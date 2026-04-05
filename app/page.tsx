@@ -21,10 +21,8 @@ export default function Home() {
   return (
     <HasMounted 
       fallback={
-        <div className="space-y-20">
+        <div className="bg-black">
           <FirstSectionSkeleton />
-          <ProjectsSkeleton />
-          <GenericSectionSkeleton />
         </div>
       }
     >
