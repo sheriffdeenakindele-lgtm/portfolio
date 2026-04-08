@@ -32,7 +32,7 @@ export default function Footer() {
             <span className="text-xs">↗</span>
           </Link>
           <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/sheriffdeen-akindele-b7608737b?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
             target="_blank"
             className="group relative text-white hover:text-white/60 transition-colors duration-300 uppercase inline-flex items-center gap-1"
           >
