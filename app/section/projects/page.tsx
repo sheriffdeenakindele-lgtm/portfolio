@@ -21,8 +21,15 @@ const projects = [
     image: `https://api.microlink.io/?url=https://kontract-weld.vercel.app/&screenshot=true&meta=false&embed=screenshot.url`,
     url: "https://kontract-weld.vercel.app/"
   },
-   {
+  {
     id: 3,
+    title: "MyWeatherToday",
+    category: "Weather service",
+    image: `https://api.microlink.io/?url=https://charlie-ebon.vercel.app/&screenshot=true&meta=false&embed=screenshot.url`,
+    url: "https://charlie-ebon.vercel.app/"
+  },
+   {
+    id: 4,
     title: "Tootuff",
     category: "eCommerce",
     image: `https://api.microlink.io/?url=http://dev.tootuff.shop&screenshot=true&meta=false&embed=screenshot.url`,
