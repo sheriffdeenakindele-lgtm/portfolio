@@ -9,15 +9,22 @@ const projects = [
   {
     id: 1,
     title: "VecApp",
-    category: "Software",
+    category: "Software-as-a-Service",
     // Using screenshot service to capture website preview
     image: `https://api.microlink.io/?url=https://vec-app.com/&screenshot=true&meta=false&embed=screenshot.url`,
     url: "https://vec-app.com/"
   },
   {
     id: 2,
+    title: "KONTRACT",
+    category: "eCommerce",
+    image: `https://api.microlink.io/?url=https://kontract-weld.vercel.app/&screenshot=true&meta=false&embed=screenshot.url`,
+    url: "https://kontract-weld.vercel.app/"
+  },
+   {
+    id: 3,
     title: "Tootuff",
-    category: "Software",
+    category: "eCommerce",
     image: `https://api.microlink.io/?url=http://dev.tootuff.shop&screenshot=true&meta=false&embed=screenshot.url`,
     url: "http://dev.tootuff.shop"
   }

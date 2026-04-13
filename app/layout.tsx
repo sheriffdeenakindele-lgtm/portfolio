@@ -1,25 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto_Condensed, Syne } from "next/font/google";
 import "./globals.css";
 import Header from "./component/header/page";
 import Footer from "./component/footer/page";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const robotoCondensed = Roboto_Condensed({
-  variable: "--font-roboto-condensed",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
-
 import SmoothScroll from "./component/SmoothScroll";
 
 export const metadata: Metadata = {
@@ -36,10 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="min-h-screen flex flex-col bg-[#0a0a0a] relative text-neutral-200">
         <SmoothScroll>
           {/* Glassmorphic Background Orbs - Reduced blur for mobile GPU stability */}
