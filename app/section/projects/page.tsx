@@ -34,6 +34,13 @@ const projects = [
     category: "eCommerce",
     image: `https://api.microlink.io/?url=http://dev.tootuff.shop&screenshot=true&meta=false&embed=screenshot.url`,
     url: "http://dev.tootuff.shop"
+  },
+  {
+    id: 5,
+    title: "TYLENS",
+    category: "PHOTOGRAPHY",
+    image: `https://api.microlink.io/?url=https://tylens.vercel.app/&screenshot=true&meta=false&embed=screenshot.url`,
+    url: "https://tylens.vercel.app/"
   }
 ];
 
