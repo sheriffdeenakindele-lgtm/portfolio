@@ -32,8 +32,8 @@ const projects = [
     id: 4,
     title: "Tootuff",
     category: "eCommerce",
-    image: `https://api.microlink.io/?url=http://dev.tootuff.shop&screenshot=true&meta=false&embed=screenshot.url`,
-    url: "http://dev.tootuff.shop"
+    image: `https://api.microlink.io/?url=https://tootuff.shop&screenshot=true&meta=false&embed=screenshot.url`,
+    url: "https://tootuff.shop/"
   },
   {
     id: 5,
